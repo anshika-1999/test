@@ -1,0 +1,9 @@
+.loadmore{padding:50px 0}
+.loadmore .card {background:#fff; position:relative;min-height:430px;margin-bottom: 30px;display: none;}
+.loadmore .card .card-header img {width:100%;border-bottom:5px solid #eb0303;height: 220px;object-fit: cover;}
+.loadmore .card .card-body {padding:20px 20px 0;}
+.loadmore .card .card-body .cat {color:#333;font-size:17px;line-height:40px;font-family: 'Poppins', sans-serif;}
+.loadmore .card .card-body h3 {color:#333;font-family: 'Poppins', sans-serif;font-weight:800;font-size:26px;margin:10px 0 20px;}
+.loadmore .card .card-body p {color:#333;padding-bottom:15px; font-size:14px;margin:0;}
+.loadmore .card .card-footer {position:absolute; bottom:0; width:100%; border-top:1px solid #ededed;}
+.loadmore .card .card-footer a.btn-link {text-align:center;padding:10px;}
