@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>JobFinder</title>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="css/s.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+   
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+<div id="mainpage">
+	<div>
+  
+      <a class="navbar-brand" href="#">
+	  <img alt="Brand" src="images/brand.png"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a href="#">Home </a></li>
+        <li><a href="#">Job Seekers</a></li>
+		<li><a href="#">Post a Job</a></li>
+		<li><a href="#">Contact Us</a></li>
+        
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+       <button type="button" class="button1">Login</button>
+	   <button type="button" class="button2">Sign up</button>
+      </ul>
+    </div>
+	
+	
+	<section class="loadmore">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+          <div class="card">
+            <a href="#" class="btn-block">
+              <div class="card-header">
+                <img src="http://via.placeholder.com/350x150" alt="">
+              </div>
+              <div class="card-body">
+                <div class="cat">Subtitle</div>
+                <h3>Title</h3>
+                <p>Description</p>
+              </div>
+            </a>
+            <div class="card-footer">
+              <a href="#" rel="nofollow" class="btn btn-block btn-link">
+                <div class="icon icon--middle icon-arrow--red"></div>Read more </a>
+            </div>
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+          <div class="card">
+            <a href="#" class="btn-block">
+              <div class="card-header">
+                <img src="http://via.placeholder.com/350x150" alt="">
+              </div>
+              <div class="card-body">
+                <div class="cat">Subtitle</div>
+                <h3>Title</h3>
+                <p>Description</p>
+              </div>
+            </a>
+            <div class="card-footer">
+              <a href="#" rel="nofollow" class="btn btn-block btn-link">
+                <div class="icon icon--middle icon-arrow--red"></div>Read more </a>
+            </div>
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+          <div class="card">
+            <a href="#" class="btn-block">
+              <div class="card-header">
+                <img src="http://via.placeholder.com/350x150" alt="">
+              </div>
+              <div class="card-body">
+                <div class="cat">Subtitle</div>
+                <h3>Title</h3>
+                <p>Description</p>
+              </div>
+            </a>
+            <div class="card-footer">
+              <a href="#" rel="nofollow" class="btn btn-block btn-link">
+                <div class="icon icon--middle icon-arrow--red"></div>Read more </a>
+            </div>
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+          <div class="card">
+            <a href="#" class="btn-block">
+              <div class="card-header">
+                <img src="http://via.placeholder.com/350x150" alt="">
+              </div>
+              <div class="card-body">
+                <div class="cat">Subtitle</div>
+                <h3>Title</h3>
+                <p>Description</p>
+              </div>
+            </a>
+            <div class="card-footer">
+              <a href="#" rel="nofollow" class="btn btn-block btn-link">
+                <div class="icon icon--middle icon-arrow--red"></div>Read more </a>
+            </div>
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+          <div class="card">
+            <a href="#" class="btn-block">
+              <div class="card-header">
+                <img src="http://via.placeholder.com/350x150" alt="">
+              </div>
+              <div class="card-body">
+                <div class="cat">Subtitle</div>
+                <h3>Title</h3>
+                <p>Description</p>
+              </div>
+            </a>
+            <div class="card-footer">
+              <a href="#" rel="nofollow" class="btn btn-block btn-link">
+                <div class="icon icon--middle icon-arrow--red"></div>Read more </a>
+            </div>
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+          <div class="card">
+            <a href="#" class="btn-block">
+              <div class="card-header">
+                <img src="http://via.placeholder.com/350x150" alt="">
+              </div>
+              <div class="card-body">
+                <div class="cat">Subtitle</div>
+                <h3>Title</h3>
+                <p>Description</p>
+              </div>
+            </a>
+            <div class="card-footer">
+              <a href="#" rel="nofollow" class="btn btn-block btn-link">
+                <div class="icon icon--middle icon-arrow--red"></div>Read more </a>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <button id="js-loadmore" class="collapsible">READ MORE</button>
+		<button id="js-loadmore1" class="collapsible">hide details</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+	
+<script>	
+	$( document ).ready(function () {
+  $(".loadmore .card").slice(0, 3).show();
+    if ($(".loadmore .card:hidden").length != 0) {
+	$("#js-loadmore1").fadeOut('fast');
+      $("#js-loadmore").show();
+    }   
+    $("#js-loadmore").on('click', function (e) {
+      e.preventDefault();
+      $(".loadmore .card:hidden").slice(0, 3).slideDown();
+      if ($(".loadmore .card:hidden").length == 0) {
+        $("#js-loadmore").fadeOut('fast');
+		$("#js-loadmore1").show();
+		$(".loadmore .card:hidden").slice(0, 3).slideUp();
+      }
+    });
+  });
+	</script>
+	
+	
+  </body>
+</html>

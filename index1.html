@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>JobFinder</title>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/jquery.js" ></script>
+	 <script src="js/bootstrap.js" ></script>
+	 <script src="js/bootstrap.min.js" ></script>
+	 
+	 
+  </head>
+  <body>
+   
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+<div id="mainpage">
+	<div>
+      <a class="navbar-brand" href="#">
+	  <img alt="Brand" src="images/brand.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a href="#">Home </a></li>
+        <li><a href="#">Job Seekers</a></li>
+		<li><a href="#">Post a Job</a></li>
+		<li><a href="#">Contact Us</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+       <button type="button" class="button1">Login</button>
+	   <button type="button" class="button2">Sign up</button>
+      </ul>
+    </div>
+	<div class="wave_line">
+		<img alt="" src="images/wave.png">
+	</div>
+	<div>
+			 <h1 id="text1">DREAM JOBS<br> Waiting for you!</h1>
+	</div>
+	<div id="text2">
+			 <h4>Search and find your dream job is now easier than ever.<br> Just browse a job and apply if you need to.</h4>
+			 
+	</div>
+	<div>
+	<button type="button" class="button3"><span class="button3text">Get Started</span></button></div>
+	<div class="image_girl">
+			 <img alt="" src="images/img2.png" ALIGN="right">
+	</div>
+</div>
+
+<div id="testimonial">
+	<div id="testimonialheading">What's our Jobseekers Said.</div>
+	<div class="carousel">
+	<div class="slides">
+		<p class="slide" id="testimonialcontent">1</p>
+		<p class="slide" id="testimonialcontent">2</p>
+		<p class="slide" id="testimonialcontent">3</p> 
+	</div>
+	</div>
+	<div class="controls">
+		<div class="control prev-slide" id="arrow1"></div>
+		<div class="control next-slide" id="arrow2"></div>
+	</div>
+</div>	
+	
+	<script>
+const delay = 3000; //ms
+
+const slides = document.querySelector(".slides");
+const slidesCount = slides.childElementCount;
+const maxLeft = (slidesCount - 1) * 100 * -1;
+
+let current = 0;
+
+function changeSlide(next = true) {
+  if (next) {
+    current += current > maxLeft ? -100 : current * -1;
+  } else {
+    current = current < 0 ? current + 100 : maxLeft;
+  }
+
+  slides.style.left = current + "%";
+}
+
+let autoChange = setInterval(changeSlide, delay);
+const restart = function() {
+  clearInterval(autoChange);
+  autoChange = setInterval(changeSlide, delay);
+};
+
+// Controls
+document.querySelector(".next-slide").addEventListener("click", function() {
+  changeSlide();
+  restart();
+});
+
+document.querySelector(".prev-slide").addEventListener("click", function() {
+  changeSlide(false);
+  restart();
+});
+
+</script>
+
+	
+	
+  </body>
+  
+
+</html>
